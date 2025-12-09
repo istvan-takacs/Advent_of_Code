@@ -19,15 +19,24 @@ dial = [i for i in range(100)]
 def shift_left(start_number, turn_number):
     global zero_counter
     global dial
-    final_position = start_number-turn_number
+
+    # If dial does not turn below 0 this is enough
+    final_position = start_number - turn_number
     
     # Dial turns below 0
     if final_position < 1:
-        # if it lands on 0
+        # If final position is 0/100/200... (regardless how many turn it takes)
         if abs(final_position) % 100 == 0:
-            zero_counter += 1
-        # zeros_passed = math.ceil(abs(final_position) / 100)
-        # zero_counter += zeros_passed
+            if start_number == 0:
+                zero_counter += (abs(final_position) // 100)
+            else:    
+                zero_counter += (abs(final_position) // 100) + 1
+        # If counted 0 already
+        elif start_number == 0:
+            zero_counter += math.ceil(abs(final_position) / 100) - 1    
+        else:
+            zero_counter += math.ceil(abs(final_position) / 100)
+        # Calculate actual dial position
         final_position = (100 - ((abs(final_position)) % 100)) % 100
 
     return dial[final_position]
@@ -35,15 +44,19 @@ def shift_left(start_number, turn_number):
 def shift_right(start_number, turn_number):
     global zero_counter
     global dial
+
+    # If dial does not turn above 99 this is enough
     final_position = start_number + turn_number
     
     
     # Dial turns over 99
     if final_position > 99:
-        # If lands on 0
+        # If final position is 0/100/200... (regardless how many turn it takes)
         if final_position % 100 == 0:
-            zero_counter += 1
-        # zero_counter += final_position // 100
+            zero_counter += (final_position // 100)
+        else:
+            zero_counter += math.floor(final_position / 100)
+        # Calculate actual dial position
         final_position = final_position % 100
 
     return dial[final_position]
