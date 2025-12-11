@@ -1,7 +1,7 @@
 input_array = []
 total_joltage = 0
 
-def maxSubsequence(nums):
+def max_subsequence(nums):
     n = len(nums)
     result = []
     start_idx = 0
@@ -31,7 +31,7 @@ with open('day3_input.md', 'r') as f:
 for i in range(len(input_array)):
     bank = input_array[i]
     print(bank)
-    largest_subsequence = maxSubsequence(bank)
+    largest_subsequence = max_subsequence(bank)
     print(largest_subsequence)
     largest_bank_integers = int("".join(map(str, largest_subsequence)))
     print(largest_bank_integers)
