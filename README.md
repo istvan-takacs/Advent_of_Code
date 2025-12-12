@@ -20,8 +20,10 @@ Lastly, I constructed an approach that dynamically keeps track of the length of 
 *Day 4:*
 Both parts were quite straightforward to me.   
 My experience with grids is limited so the solution to traversing it is a bit overengineered. Once I realised that a simple coordinte offsetting approach would have sufficed my quite atomic functions have been laid out already. Similarly, I was very much conscious of having to rework most of my code for the previous day's problem so I tried to lay strong scalable foundations for whatever would await me at Part 2.  
-Turns out Part 2 is actually not that complex, it required only to change the state of the grid based on the information gathered from traversing it. For this I challenged myself with some nested conditional list comprehension.
+Turns out Part 2 is actually not that complex, it required only to change the state of the grid based on the information gathered from traversing it. For this I challenged myself with some nested conditional list comprehension.  
 
+*Day 5:*
+This day was a lot of fun. I had a really good time solving it and focusing on list comprehensions. Even if my approach needed to be amended due to the size of the data set this was a super valuable learning experience. As for part 2, merging intervals did not end up being as complex as it could have been especially that, by now I understood that due to the size of the input data, it needed to be fairly optimal.
 
 --- Credits for creating Advent of Code ---
 
