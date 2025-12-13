@@ -25,6 +25,11 @@ Turns out Part 2 is actually not that complex, it required only to change the st
 *Day 5:*
 This day was a lot of fun. I had a really good time solving it and focusing on list comprehensions. Even if my approach needed to be amended due to the size of the data set this was a super valuable learning experience. As for part 2, merging intervals did not end up being as complex as it could have been especially that, by now I understood that due to the size of the input data, it needed to be fairly optimal.
 
+*Day 6:*
+This day was an adventure. Part 1 was fairly straighforward and gave me a good opportunity to have fun wih list comprehensions. Now that I am familiar with zip(*list) that may not have been super necessary but it was really good practice.  
+Part 2 proved to be too difficult without help so I have decided not to share my code that gave me the solution at the end as it is mostly derivative. It has however given me amazing perspective and invaluable insight on how to handle similar problems in the future.
+
+
 --- Credits for creating Advent of Code ---
 
 Puzzles, Code, & Design: Eric Wastl
