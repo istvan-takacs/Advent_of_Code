@@ -27,7 +27,11 @@ This day was a lot of fun. I had a really good time solving it and focusing on l
 
 *Day 6:*
 This day was an adventure. Part 1 was fairly straighforward and gave me a good opportunity to have fun wih list comprehensions. Now that I am familiar with zip(*list) that may not have been super necessary but it was really good practice.  
-Part 2 proved to be too difficult without help so I have decided not to share my code that gave me the solution at the end as it is mostly derivative. It has however given me amazing perspective and invaluable insight on how to handle similar problems in the future.
+Part 2 proved to be too difficult to solve without help so I have decided not to share my code that gave me the solution at the end as it is mostly derivative. It has however given me amazing perspective and invaluable insight on how to handle similar problems in the future.  
+
+*Day 7:*
+Reading tachyon manifolds and splitting rays were definitely not on my christmas list, but it was nevertheless a super fun gift. Once I figured out how to parse the input in a usable format the first part itself just asked to count up the number of times a ray is split. Once I have mapped the correct splittings, it was just a matter of counting.
+For part 2, I decided to use combinatorics as there was no way that with such a large input file, mapping all possible alternate realities was going to be plausible. We know that every time a ray is split in two, it generates at least two additional realities. I decided to iterate through the already parsed diagram (so that I knew where the possible light splittings might happen) and for every split, counted up the alternate realities generated depending on the three positions above it (top left, top, and top right). Once I consolidated the logic the implementation was actually the easy bit.  
 
 
 --- Credits for creating Advent of Code ---
