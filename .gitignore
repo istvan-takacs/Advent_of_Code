@@ -1,3 +1,8 @@
-/day6_input.txt
-/day6.py
-/day7_input.txt
+# /day6_input.txt
+# /day6.py
+# /day7_input.txt
+
+*.md
+!README.md
+*.txt
+day6.py
