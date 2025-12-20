@@ -1,7 +1,4 @@
-# /day6_input.txt
-# /day6.py
-# /day7_input.txt
-
+# Hide inputs
 *.md
 !README.md
 *.txt
