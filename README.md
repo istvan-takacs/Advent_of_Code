@@ -40,6 +40,13 @@ Fortunately, this has been a textbook example of that data structure, even part 
 Today has also allowed me to get to know combinations a little bit, a fantastic library that I am excited to use in the future as its use cases seem unbounded. After creating tuples of the all possible box index combinations and calculating the distance between them came the hard part. Keeping track of joint circuits and merging them if necessary. 
 Advent of Code is such a great tool for learning these getting a deeper understanding.
 
+*Day 9:*. 
+Similarly to day 6 today proved to be too much for me to handle. I ended up reaching for a lot of hints and ideas from external sources to solv this problem, and because of that I will not be sharing it, as it would be mostly derivative.
+Part 1 one was simple enough and I could handle the large input dataset just by treting it as a grid, and finding the topmost left and bottom right red tiles and calculating the area between them.  
+For Part 2 unfortunately, this approach is too inefficient. I had the idea of using flood fill which I implemented, however, as it was still working on the full grid, it would have taken hours to run through the entire input. This was the point where I relented and used an approach I have seen using coordinate compression and breaking it further down into line segments to identify walls the traversing can't cross. From here flood fill proved useful enough to identify outside points and constructing a check for a what rectangles are inside the polygon ultimately gave the answer.  
+
+
+
 --- Credits for creating Advent of Code ---
 
 Puzzles, Code, & Design: Eric Wastl
